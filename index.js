@@ -1,3 +1,9 @@
+/**
+ * @author Sal Carrera
+ * @since 01/29/2023
+ * @purpose Create RESTful middleware between Open AI / Chat GPT and Salesforce 
+ */
+
 import { Configuration, OpenAIApi } from "openai";
 import express from 'express'
 import cors from 'cors';
