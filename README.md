@@ -1,6 +1,6 @@
 # Express JS - Open AI / Chat GPT Salesforce Integration
 
-This is a RESTful middleware built with Express JS to integrate Open AI / Chat GPT with Salesforce.
+This is an example of a RESTful Chat GPT API built with Express JS to integrate Open AI / Chat GPT with Salesforce.
 
 ## Requirements
 - Node.js
