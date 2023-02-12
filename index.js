@@ -7,11 +7,14 @@
 import { Configuration, OpenAIApi } from "openai";
 import express from 'express'
 import dotenv from 'dotenv';
+const cors = require('cors');
+
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const configuration = new Configuration({
     apiKey: process.env.KEY,
@@ -28,7 +31,7 @@ app.post('/', async (req, res) => {
         return;
       }
 
-      const lan = req.body.language || '';
+      const lan = req.body.question || '';
 
       try {
 
@@ -64,9 +67,6 @@ app.listen(process.env.PORT, () => {
 });
 
 
-function generatePrompt(codeLanguage) {
-    return `write some ${codeLanguage} code`;
+function generatePrompt(question) {
+    return ;
 }
-
-
-
