@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
         return;
       }
 
-      const lan = req.body.language || '';
+      const lan = req.body.prompt || '';
 
       try {
 
@@ -66,9 +66,6 @@ app.listen(process.env.PORT, () => {
 });
 
 
-function generatePrompt(codeLanguage) {
-    return `write some ${codeLanguage} code`;
+function generatePrompt(normieTalk) {
+    return `Say this "${normieTalk}" in hood form`;
 }
-
-
-
