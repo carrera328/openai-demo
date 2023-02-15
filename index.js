@@ -67,5 +67,5 @@ app.listen(process.env.PORT, () => {
 
 
 function generatePrompt(normieTalk) {
-    return `Say this "${normieTalk}" in hood form`;
+    return normieTalk;
 }
